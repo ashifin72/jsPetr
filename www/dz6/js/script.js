@@ -7,7 +7,7 @@ let menuItems = document.querySelectorAll(".menu-item"),
     columns = document.querySelectorAll(".column"),
     li5 = document.createElement('li'),
     text = document.createTextNode('Ваше отношение к технике apple'),
-    oridginal = document.createTextNode('подлинную');
+    oridginal = document.createTextNode('Мы продаем только подлинную технику Apple ');
 
 menu.replaceChild(menuItems[2], menuItems[1]);
 menu.insertBefore(menuItems[1], menuItems[3]);
@@ -16,11 +16,7 @@ li5.innerHTML = 'Пятый пункт';
 menu.appendChild(li5);
 
 document.body.style.background = "url(../dz6/img/apple_true.jpg) center no-repeat";
-let textTitle = title.innerText;
-let arrTitle = textTitle.split(' ');
-// title.appendChild(oridginal);
-textTitle.replaceChild(arrTitle[2], oridginal);
-console.log(title);
+
 
 
 
